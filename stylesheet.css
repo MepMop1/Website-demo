@@ -1,0 +1,87 @@
+body {
+    font-family: Helvetica, Arial;
+    /* Font */
+    transition: background-color 0.3s ease;
+    /*Det tar 0.3 sekunder innan den backgrundfärgen ändras */
+}
+
+#msg {
+    width: 45px;
+    /*Bredd på bilden */
+    background-color: rgb(56, 177, 204);
+    /*Färg*/
+    position: fixed;
+    /*  bilden stannar kvar även när man scrollar */
+    top: 10px;
+    /* 10px från toppen */
+    left: 10px;
+    /* 10px från vänsterkanten */
+    cursor: pointer;
+    /* muspekaren blir en hand när man hovrar */
+    border-radius: 5px;
+    /* Rundade hörn  */
+}
+
+form {
+    background-color: rgb(219, 212, 212);
+    /*Annan färg bakom färgerna*/
+    width: 400px;
+    /*Bredd på "form*/
+    margin: auto;
+    /* centrerar */
+    padding: 30px;
+    /*Utrymmet*/
+    border-radius: 5px;
+    /*Rundade hörn*/
+}
+
+#informationUpp {
+    color: rgb(56, 177, 204);
+    /*Rubrik */
+    padding-top: 5%;
+    /*Mellanrum till upp */
+    text-align: center;
+    /*Centrerar texten*/
+    text-decoration: underline;
+    /*Skapar en linje under texten*/
+}
+
+label {
+    display: block;
+    /*Startar på ny linje*/
+    margin-top: 8px;
+    /*Utrymme upp*/
+    margin-left: 1px;
+    /*Korrigerar label texten bättre*/
+
+}
+
+input,
+select {
+    /*Alla input och select*/
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /*Linje runt*/
+    border-radius: 3px;
+    /*RUnda hörn*/
+}
+
+input[type="submit"] {
+    background-color: rgb(56, 177, 204);
+    /*Färgen på submit*/
+    color: white;
+    /*Text färgen*/
+    border: none;
+    /*Tar bort default border*/
+    padding: 12px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    /*Så att muspekaren blir till en öppen hand*/
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(39, 114, 131);
+    /*När musen är på kanppen byter den färg*/
+}

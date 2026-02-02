@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <h1 id="informationUpp">Skapa nytt konto</h1>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <img id="msg" src="BrushIcon.png" onclick="visaMessage()" style="cursor: pointer;">
+
+    <script src=" script.js"></script>
+
+
+    <form onsubmit="return kollaLosenord()"> <!--Event sker när formuläret skickas in-->
+        <main>
+
+
+
+            <br>
+            <section>
+
+                <label for="anamn"> Användarnamn:</label> <!--Efterfrågar personens användarnamn-->
+                <input type="text" id="anamn" placeholder="DragonWarrior345" required>
+
+                <br>
+                <br>
+                <label for="alder">Ålder:</label> <!--Efterfrågar personens åldern-->
+                <input type="number" name="number" id="alder" placeholder="Måste vara äldre än 15 år gammal" min="15"
+                    max="100" required>
+
+                <br>
+                <br>
+
+                <label for="email">Email:</label> <!--Efterfrågar personens email-->
+                <input type="email" name="email" id="email" placeholder="namn@exempel.se">
+
+                <br>
+                <br>
+
+                <label for="losenord"> Skapa Lösenord:</label> <!--Efterfrågar att presonen skapar att lösenord-->
+                <input type="password" id="losenord" placeholder="Minst 5 tecken" minlength="5" required>
+
+                <br>
+                <br>
+
+                <label for="upLosenord"> Upprepa Lösenord:</label>
+                <!--Efterfrågar att personen upprepar sitt lösenord-->
+                <input type="password" id="upLosenord" placeholder="Upprepa lösenord" required>
+
+                <br>
+                <br>
+                <label for="speltyp">Välj Speltyp:</label> <!--Efterfrågar vilken speltyp-->
+                <select name="select" id="lista"> <!--Skapar en select-lista-->
+                    <option value="action,">Action</option>
+                    <option value="sport">Sport</option>
+                    <option value="rpg">RPG</option>
+                    <option value="fps">FPS</option>
+                </select>
+
+                <br>
+                <br>
+
+                <input type="submit" id="submit" value="Registrera Konto!"> <!--Skapar "submit" knapp-->
+
+            </section>
+        </main>
+    </form>
+</body>
+
+</html>
